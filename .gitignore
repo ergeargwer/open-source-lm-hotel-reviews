@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Excel & Data (Optional: keeping these if you want to share data, otherwise uncomment to ignore)
+# *.xlsx
+# *.csv
+
+# OS specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Virtual Environment
+venv/
+env/
+.env

@@ -2,7 +2,18 @@
 
 本專案提供一套基於 Jupyter Notebook 的評論分析工具，整合了本地模型 (Ollama) 與雲端模型 (OpenAI, Deepseek, Grok 等) 的 API，針對飯店評論資料進行多維度的自動化分析。系統同時包含人工標註介面與 SQLite 資料庫整合，方便進行模型效能比較與資料管理。
 
-## 📁 專案檔案結構
+## � 相關論文 (Related Paper)
+
+**論文標題 (Paper Title)**: A Study of Content Analysis of Hotel Reviews Assisted by Open-Source Language Models: A Case Study of Accommodation Reviews in the Taipei Area
+
+**論文摘要 (Abstract)**:  
+本研究旨在探討開源語言模型（Open-Source LLMs）於輔助內容分析（LLM-Assisted Content Analysis, LACA）框架之應用潛力，評估其於台北地區旅宿評論多維度文本分析之可行性與成本效益。研究採用混合方法設計，系統性比較 23 款開源語言模型（參數規模涵蓋 0.5B 至 32B）與 4 款主流雲端大語言模型，針對包含情感傾向、反諷識別及舒適度等九大維度的 4,952 筆中文旅宿評論進行測試。
+
+研究結果顯示：（1）模型效能呈現顯著分層現象，參數量 14B 以上之模型（如 mistral-small3.1_24b）在準確性與穩定性上表現最佳，任務完成率超過 95%；（2）頂尖開源模型之總體準確率達 0.75，已具備與雲端模型（如 GPT-4o-mini）同等之分析水準；（3）在成本效益方面，本地部署模型分析一萬筆評論之能源成本約為新台幣 109 元，顯著優於雲端 API 服務所需之 137 元，然而雲端運算速度快約 4 倍。
+
+綜合而言，實驗結果證實大型開源模型（≥ 14B）結合 LACA 框架，能有效處理中文評論分析任務，為旅宿業者提供一套兼具高準確度與低成本的顧客洞察工具。
+
+## �📁 專案檔案結構
 
 - **`本地與雲端評論分析v18.ipynb`**: 核心程式碼，包含所有分析邏輯與操作介面。
 - **`codebook_v5.xlsx`**: 編碼簿 (Codebook)，定義分析的維度、定義與評分標準。
